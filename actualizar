@@ -1,0 +1,46 @@
+<i-div class="tarjeta">
+    <ion-grid fixed>
+
+      <div style="display: flex; justify-content: center;">
+        <small style="color: rgb(0, 0, 0); margin-top: 20px; font-size: 18px;text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Bienvenido</small>
+      </div>
+
+      <i-row>
+     
+
+        <form #formulario [formGroup]="registrationForm" (ngSubmit)="submit()" action="../bienvenido/bienvenido.page.html" method="POST">
+        <ion-col size="12">
+          <img src="../assets/icon/usuario.png" alt="" style="float: left; width: 20px; margin-top: 20%;">
+          <ion-item>
+            <ion-label style="font-size:small; padding-top: 3px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" position="floating">Usuario</ion-label>
+            <ion-input [(ngModel)]="nombre" formControlName="nombre"  type="text" placeholder="Digite su usuario" required></ion-input>
+          </ion-item>
+        </ion-col>
+      
+        <ion-col size="12">
+          <img src="../assets/icon/llave.png" alt="" style="float: left; width: 20px; margin-top: 20%;">
+          <ion-item>
+            <ion-label style="font-size: small; padding-top: 3px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" position="floating">Contraseña</ion-label>
+            <ion-input formControlName="contrasena" [(ngModel)]="contrasena" type="password" #Contrasena placeholder="Digite su contraseña" required></ion-input>
+          </ion-item>
+        </ion-col>
+                
+        <ion-button [disabled]="!registrationForm.valid" type="submit" expand="block" shape="round" style="font-size:small;" fill="solid" [routerLink]="['/bienvenido']">
+            Ingresar
+        </ion-button>
+        </form>
+
+
+        <ion-col size="12">
+          <hr style="width: auto;">
+          <ion-text  style="text-align: center;">
+            <h5 style="font-size: small; margin: 8px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" ion-button (click)="showToast()">¿Perdiste tu contraseña?</h5>
+          </ion-text>
+          <ion-text  style="text-align: center;">
+            <h5 style="font-size: small; margin: 8px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" ion-button (click)="ShowToast()">¿No tienes cuenta? Registrate</h5>
+          </ion-text>
+        </ion-col>
+
+      </i-row>
+    </ion-grid>
+  </i-div>
