@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar class="toolbarcolor">
+    <img src="assets/img/2.png"/> <hr>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 style="color: black; text-align: center;" >Bienvenido!</h2>
+  <div class="ion-padding">
+    <form class="ion-padding">
+      <div class="wrap-input"> 
+        <ion-input color="dark" class="input" type="text" name="user-name" placeholder="Usuario" [(ngModel)]="valor"></ion-input>
+      </div>
+      <div class="wrap-input"> 
+        <ion-input class="input" type="password" name="user-name" placeholder="Contraseña"></ion-input>
+      </div>
+    </form>
+  </div>
+  <div class="centrado">
+    <ion-button color="warning" [routerLink]="['/pagina4', valor]">Ingresar</ion-button>
+  </div>
+  <ion-text [routerLink]="['/pagina2']">
+    <h6>Olvidé mi contraseña</h6>
+  </ion-text>
+
+</ion-content>
+
+<ion-footer class="footerColor">
+  <img src="assets/img/1.png"/>
+</ion-footer>

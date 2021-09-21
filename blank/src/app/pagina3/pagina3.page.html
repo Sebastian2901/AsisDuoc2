@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="toolbarcolor">
+    <img src="assets/img/2.png"/> <hr>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 style="color: black; text-align: center;" >Contraseña Nueva</h2>
+  <div class="ion-padding">
+    <form class="ion-padding">
+      <div class="wrap-input"> 
+        <input class="input" type="password" name="user-name" placeholder="Contraseña">
+      </div>
+      <div class="wrap-input"> 
+        <input class="input" type="password" name="user-name" placeholder="Repetir Contraseña">
+      </div>
+    </form>
+  </div>
+  <div class="centrado">
+    <ion-button color="warning" [routerLink]="['/prueba1']">Aceptar</ion-button>
+  </div>
+  <div *ngFor="let persona of personas"></div>
+
+</ion-content>
+
+<ion-footer class="footerColor">
+  <img src="assets/img/1.png"/>
+</ion-footer>

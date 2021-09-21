@@ -1,0 +1,44 @@
+ion-content{
+    --ion-background-color:#fff
+}
+
+.footerColor{
+    background: #fff;
+    img{
+      height: 10vh;
+      width: auto;
+      margin: auto;
+      display: block;
+      }
+  }
+
+.wrap-input{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 26px;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.12);
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    height: 46px;
+    padding: 0 20px 0 23px;
+    color: black;
+}
+
+.centrado{
+    text-align: center;
+}
+
+h6{
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
